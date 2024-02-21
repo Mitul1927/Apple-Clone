@@ -58,13 +58,13 @@
   }
   .hidden {
     display: inline;
-    ft: 5px;
+    position: absolute;
+    left: 10px;
     font-size: 2rem;
   }
 
   .show {
-    display: none;position: absolute;
-    le
+    display: none;
   }
   .nav-bar {
     flex-direction: row-reverse;
