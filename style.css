@@ -71,6 +71,7 @@
         flex-direction: row-reverse;
         padding: 10px;
         align-items: flex-end;
+        z-index: 3;
     }
 
     .nav-inner-div {
@@ -110,6 +111,7 @@
 /* ************************************************************************ */
 /* section 1 block css start */
 
+
 /* offer block css start */
 .offers {
     background-color: #1d1d1f;
@@ -133,7 +135,7 @@
 /* making it responsive */
 @media (max-width: 830px) {
     .offers {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         padding: 0.7rem 2.5rem 0.8rem 2.5rem;
     }
 }
@@ -179,9 +181,25 @@
     left: 10.5rem;
 }
 
-.sec-1-img img {
-    height: 400px;
-    max-width: 100%;
+
+
+/* text responsiveness */
+@media (max-width: 830px) {
+    .section1 h1 {
+        font-size: 3rem;
+        font-weight: 540;
+        padding-top: 3rem;
+    }
+
+    .section1 h2 {
+
+        font-weight: 350;
+        font-size: 1.7rem;
+        padding: 0.25rem 1rem 1rem 1rem;
+
+    }
+
+
 }
 
 /* section 1 block css ends */
