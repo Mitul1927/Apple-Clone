@@ -361,7 +361,7 @@
 /* section 3 block css ends */
 .grid {
   height: 1500px;
-  width: 100%;
+  width: 95%;
   background-color: white;
   display: grid;
   grid-template-columns: 50% 50%;
