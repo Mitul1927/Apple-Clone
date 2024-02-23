@@ -359,4 +359,23 @@
 }
 
 /* section 3 block css ends */
+.grid {
+  height: 1500px;
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 500px 500px 500px;
+  padding: 20px;
+  grid-gap: 15px 15px;
+}
+.white {
+  background-color: white;
+  color: black;
+}
+.black {
+  background-color: black;
+  color: white;
+}
+
 /* ************************************************************************ */
