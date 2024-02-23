@@ -369,6 +369,13 @@
     aspect-ratio: 1.25;
 
 }
+@media (max-width:830px){
+    .grid-container{
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 8px;
+    }
+}
 
 /* section 4 grid block css ends  */
 /* ************************************************************************ */
