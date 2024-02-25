@@ -594,7 +594,7 @@
 
 /* making sec 4 responsive  */
 @media (max-width:830px) {
-    .grid-container {
+    .section4 {
         grid-template-columns: 1fr;
         gap: 12px;
         padding: 8px;
