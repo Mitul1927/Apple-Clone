@@ -367,7 +367,7 @@
 .section4 {
   display: grid;
   grid-template-columns: 48% 48%;
-  gap: 2%;
+  gap: 1%;
   margin-left: 1%;
 }
 
