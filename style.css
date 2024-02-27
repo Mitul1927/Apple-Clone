@@ -366,15 +366,17 @@
 } */
 .section4 {
   display: grid;
-  grid-template-columns: 49% 50%;
+  grid-template-columns: 50% 50%;
   /* grid-template-rows: 480px;
   height: 1500px; */
   gap: 1%;
-  margin-left: 1%;
+  margin: 0.5% 1% 0.5% 0.5%;
+  padding: 0.5% 1% 0.5% 0.5%;
 }
 
 .grid-item {
   background-color: #fbfbfd;
+  /* background-color: pink; */
   aspect-ratio: 1.25;
   height: inherit;
   width: 100%;
@@ -493,7 +495,13 @@
 
 .sec-4-content-3 img {
   width: 68%;
-  padding-top: 1rem;
+  position: relative;
+  padding-top: 5%;
+}
+@media (min-width: 1400px) {
+  .sec-4-content-3 img {
+    padding-top: 13%;
+  }
 }
 
 /* section 4 content 4 */
@@ -522,7 +530,7 @@
 
 .sec-4-content-4 img {
   width: 80%;
-  padding-top: 5rem;
+  padding-top: 15%;
 }
 
 /* section 4 content 5 */
@@ -557,9 +565,9 @@
 }
 
 .sec-4-content-5 img {
-  height: auto;
-  width: 50%;
-  padding-top: 0.2rem;
+  height: 30%;
+  width: 40%;
+  padding-top: 10%;
 }
 
 /* section 4 content 6 */
@@ -648,3 +656,8 @@
 
 /* section 4 grid block css ends  */
 /* ************************************************************************ */
+.section5 {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+}
