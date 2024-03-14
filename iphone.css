@@ -1,0 +1,223 @@
+*{
+  font-family:SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+div.scrollmenu {
+    padding-left: 90px;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 0px 20px 0px 4px;
+    text-decoration: none;
+    width: 60.89px;
+    height: 92px;
+    font-size: 12px;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: white;
+  }
+
+.icons .scrollmenu .icons_pic{
+    padding-left: 10px;
+    height: 54px;
+    width: 38px;
+    align-items: center;
+}
+
+#Link {
+  text-align: center;
+  font-size: 12px ;
+  font-family:SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background-color: #f5f5f7;
+  /* height: 44.65px; */
+  margin-top: 10px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+#Link a{
+  text-decoration: none;
+  color: #0066CC;
+}
+#pic1{
+  font-family:SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  
+  text-align: center;
+  background-color: black;
+  text-decoration: none;
+}
+button{
+  background-color: #0071e3;
+  width:62px;
+  height: 36px;
+  border-radius: 980px;
+  text-decoration: none;
+  border: 0;
+}
+#pic1 a{
+  text-decoration: none;
+}
+#pic1 p a {
+  text-decoration: none;
+  color: white;
+}
+#pic1_1{
+  width: 100%;
+}
+#pic2{
+  font-family:SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+#div3{
+  display: flex;
+}
+.pic2{
+  margin-top: 30%;
+  margin-left: 18%;
+  text-align: justify;
+  width: 55%;
+}
+#pic3{
+  width: 100%;
+  height: 830px;
+}
+#Compare{
+  text-align: center;
+}
+#Compare h1{
+  font-size: 900;
+}
+table{
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+}
+td{
+  margin-top: 4px;
+}
+.compare_pics{
+  width: 80%;
+}
+.New{
+  color: red;
+}
+.name{
+  height: 30px;
+}
+#size{
+  font-size: 20px;
+}
+#display{
+  font-size: 13px;
+}
+.cheating{
+  width: 100%;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(18, 18, 18, 0.9);
+  padding: 10px;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 99%;
+  z-index: 4;
+}
+
+.nav-inner-div {
+  margin: 0 2rem 0 2rem;
+  margin: 0 auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 27.2px;
+  font-weight: 250;
+  font-size: 0.75rem;
+}
+
+.nav-item {
+  margin-right: 2.4rem;
+  color: white;
+  text-decoration: none;
+}
+
+.apple-logo {
+  font-size: 1.1rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* for reposiveness of the navbar */
+@media (max-width: 830px) {
+  .shop {
+    display: none;
+  }
+
+  .hidden {
+    display: inline;
+    position: absolute;
+    left: 10px;
+    font-size: 2rem;
+  }
+
+  .show {
+    display: none;
+  }
+
+  .nav-bar {
+    flex-direction: row-reverse;
+    padding: 10px;
+    align-items: flex-end;
+    z-index: 3;
+    width: 100%;
+    /position: fixed;/
+  }
+
+  .nav-inner-div {
+    margin: 0;
+  }
+
+  .apple-logo {
+    font-size: 1.25rem;
+    opacity: 0.8;
+  }
+
+  .search-logo {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+
+  .cart-logo {
+    font-size: 1.35rem;
+    opacity: 0.85;
+  }
+
+  .hamburger {
+    display: contents;
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    margin-right: 2rem;
+  }
+}

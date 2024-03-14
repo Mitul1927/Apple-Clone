@@ -1,0 +1,184 @@
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+/* ************************************************************************ */
+/* navbar css start */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(250, 250, 252, .8);
+    padding: 10px;
+    color: black;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 4;
+}
+
+.nav-inner-div {
+    margin: 0 2rem 0 2rem;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 27.2px;
+    font-weight: 250;
+    font-size: 0.75rem;
+}
+
+
+.nav-item {
+    margin-right: 2.4rem;
+    color: black;
+    text-decoration: none;
+
+}
+
+.apple-logo {
+    font-size: 1.1rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* for reposiveness of the navbar */
+@media (max-width: 830px) {
+    .shop {
+        display: none;
+    }
+
+    .hidden {
+        display: inline;
+        position: absolute;
+        left: 10px;
+        font-size: 2rem;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .nav-bar {
+        flex-direction: row-reverse;
+        padding: 10px;
+        align-items: flex-end;
+        z-index: 3;
+        width: 100%;
+        /*position: fixed;*/
+    }
+
+    .nav-inner-div {
+        margin: 0;
+    }
+
+    .apple-logo {
+        font-size: 1.25rem;
+        opacity: 0.8;
+    }
+
+    .search-logo {
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+
+    .cart-logo {
+        font-size: 1.35rem;
+        opacity: 0.85;
+    }
+
+    .hamburger {
+        display: contents;
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        width: 100%;
+        margin-right: 2rem;
+    }
+}
+
+/* navbar css ends */
+/* ************************************************************************ */
+
+
+/* ************************************************************************ */
+/* bg image start */
+.back_img_1 {
+    /* margin-top: 2rem; */
+    padding: 3rem 0 4.6rem 0;
+    height: 31rem;
+    width: 100%;
+
+}
+
+/* bg image ends */
+/* ************************************************************************ */
+
+
+/* ************************************************************************ */
+/* section 1 css starts   */
+.section1 h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 650;
+}
+
+/* section 1 css ends   */
+/* ************************************************************************ */
+
+
+/* ************************************************************************ */
+/* section 2 css starts   */
+.section2 {
+    width: 100%;
+    height: 185.445rem;
+    background-color: rgb(245, 245, 247);
+    text-align: center;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.sub_sec_1 {
+    width: 50%;
+    height: 6rem;
+    background-color: white;
+    color: black;
+    margin: 2rem 15.313rem 4rem 15.313rem;
+
+}
+
+.sub_sec_2 {
+    width: 50%;
+    height: 6rem;
+    background-color: white;
+    color: black;
+    margin: 2rem 15.313rem 4rem 15.313rem;
+}
+
+.sub_sec_3 {
+    width: 50%;
+    height: 6rem;
+    background-color: white;
+    color: black;
+    margin: 2rem 15.313rem 4rem 15.313rem;
+}
+
+/* section 2 css ends   */
+/* ************************************************************************ */
