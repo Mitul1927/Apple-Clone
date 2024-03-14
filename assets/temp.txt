@@ -1,0 +1,280 @@
+.section4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 8px;
+}
+
+.grid-item {
+    background-color: #fbfbfd;
+    /* background-color: purple; */
+    aspect-ratio: 1.25;
+}
+
+/* section 4 content 1  */
+.sec-4-content-1 {
+    text-align: center;
+}
+
+.sec-4-content-1 h1 {
+    color: black;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-4-content-1 h3 {
+    color: black;
+    font-weight: 380;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    padding-top: 0.3rem;
+}
+
+.sec-4-content-1 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-1 img {
+    width: 100%;
+}
+
+/* section 4 content 2  */
+.sec-4-content-2 {
+    text-align: center;
+}
+
+.sec-4-content-2 h1 {
+    color: black;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-4-content-2 h3 {
+    color: black;
+    font-weight: 380;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    padding-top: 0.3rem;
+}
+
+.sec-4-content-2 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-content-2 a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-2 img {
+    padding-top: 1rem;
+    height: 24.375rem;
+    width: 21.875rem;
+}
+
+/* section 4 content 3 */
+.black-sec {
+    background-color: black;
+}
+
+.sec-4-content-3 {
+    text-align: center;
+}
+
+.sec-4-content-3 h1 {
+    color: white;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-4-content-3 h3 {
+    color: white;
+    font-weight: 380;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    padding-top: 0.3rem;
+}
+
+.sec-4-content-3 a {
+    text-decoration: none;
+    color: #2997ff;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-content-3 a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-3 img {
+    height: 24.438rem;
+    padding-top: 1rem;
+}
+
+/* section 4 content 4 */
+
+.sec-4-content-4 {
+    text-align: center;
+}
+
+.sec-4-content-4 h1 {
+    color: black;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-4-content-4 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-4 img {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+
+/* section 4 content 5 */
+.sec-4-content-5 {
+    text-align: center;
+}
+
+.sec-4-content-5 h1 {
+    color: black;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-4-content-5 h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 380;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    padding-top: 0.3rem;
+}
+
+.sec-4-content-5 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-5 img {
+    height: 25rem;
+    padding-top: 0.2rem;
+}
+
+/* section 4 content 6 */
+.sec-4-content-6 {
+    text-align: center;
+}
+
+.sec-4-content-6 h1 {
+    color: black;
+    font-weight: 550;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.sec-logo {
+    color: black;
+    font-size: 2.5rem;
+
+}
+
+.sec-4-content-6 h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 380;
+    font-size: 1.3rem;
+    padding-bottom: 1.4rem;
+    padding-top: 0.3rem;
+}
+
+.sec-4-content-6 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.sec-4-a:hover {
+    text-decoration: underline;
+}
+
+.sec-4-content-6 img {
+    padding-top: 0.2rem;
+}
+
+
+
+/* making sec 4 responsive  */
+@media (max-width:830px) {
+    .section4 {
+        grid-template-columns: 0.5fr;
+        gap: 12px;
+        padding: 8px;
+    }
+
+    .sec-4-content-1 img {
+        /* width: 350px; */
+        width: 100%;
+    }
+
+    .sec-4-content-2 img {
+        /* width: 150px;
+        height: 150px; */
+        width: 50%;
+        height: auto;
+    }
+
+    .sec-4-content-3 img {
+        width: 199px;
+        height: 157px;
+
+
+    }
+
+    .sec-4-content-4 img {
+        width: 350px;
+    }
+
+    .sec-4-content-5 img {
+        width: 100px;
+        height: 170px;
+    }
+
+    .sec-4-content-6 img {
+        width: 350px;
+
+    }
+
+    .grid-item {
+        background-color: #9c9cdb;
+
+    }
+}
