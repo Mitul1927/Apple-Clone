@@ -35,8 +35,10 @@
   font-size: 0.75rem;
 }
 
-.nav-links li {
+.nav-item {
   margin-right: 2.4rem;
+  color: white;
+  text-decoration: none;
 }
 
 .apple-logo {
@@ -176,10 +178,19 @@
   text-decoration: underline;
 }
 
-.sec-1-img {
+.sec-1-text {
   position: relative;
-  top: 3rem;
-  left: 10.5rem;
+}
+
+.sec-1-img {
+  width: 80%;
+  height: 400px;
+  background-image: url("./assets/sec1-iphone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 14.5rem;
+  right: 1.5rem;
 }
 
 /* text responsiveness */
@@ -194,6 +205,15 @@
     font-weight: 350;
     font-size: 1.7rem;
     padding: 0.25rem 1rem 1rem 1rem;
+  }
+
+  .sec-1-img {
+    background-image: url("./assets/sec1-img-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10rem;
+    bottom: 0;
   }
 }
 
@@ -239,15 +259,20 @@
 
 .sec-2-img {
   background-image: url("./assets/sec2-iphone.png");
+  width: 100%;
+  height: 370px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
-  width: 100%;
-  height: 25rem;
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
+  background-position: center;
+
+  @media (max-width: 768px) {
+    height: 300px;
+
+    min-height: 150px;
+  }
 }
 
 /* section 2 block css ends */
@@ -323,6 +348,7 @@
   font-size: 1.3rem;
   font-weight: 200;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 @media (max-width: 830px) {
@@ -341,11 +367,9 @@
   }
 
   .sec-3-text p {
-    /* padding-top: 0.5rem; */
     font-weight: 300;
     font-size: 1.3rem;
     padding: 0.5rem 4rem 1rem 4rem;
-    /* padding-bottom: 1rem; */
   }
 
   #myBtn {
@@ -369,14 +393,13 @@
   grid-template-columns: 50% 50%;
   /* grid-template-rows: 480px;
   height: 1500px; */
-  gap: 1%;
+  gap: 0.9%;
   margin: 0.5% 1% 0.5% 0.5%;
   padding: 0.5% 1% 0.5% 0.5%;
 }
 
 .grid-item {
   background-color: #fbfbfd;
-  /* background-color: pink; */
   aspect-ratio: 1.25;
   height: inherit;
   width: 100%;
@@ -414,6 +437,7 @@
 }
 
 .sec-4-content-1 img {
+  padding-top: 6%;
   width: 100%;
 }
 
@@ -451,7 +475,7 @@
 }
 
 .sec-4-content-2 img {
-  padding-top: 1rem;
+  padding-top: 3%;
   /* height: 24.375rem;
   width: 21.875rem; */
   height: 50%;
@@ -494,15 +518,22 @@
 }
 
 .sec-4-content-3 img {
-  width: 68%;
+  width: 69.1%;
   position: relative;
   padding-top: 5%;
 }
+
 @media (min-width: 1400px) {
   .sec-4-content-3 img {
-    padding-top: 13%;
+    padding-top: 7%;
   }
 }
+
+/* @media (min-width: 1600px) {
+  .sec-4-content-3 {
+    padding-top: 7%;
+  }
+} */
 
 /* section 4 content 4 */
 
@@ -529,7 +560,7 @@
 }
 
 .sec-4-content-4 img {
-  width: 80%;
+  width: 100%;
   padding-top: 15%;
 }
 
@@ -622,33 +653,40 @@
     align-items: center;
     margin: 0;
   }
+
   .grid-item {
     width: 100%;
     height: inherit;
     /* height: 420px; */
   }
+
   .sec-4-content-1 img {
     width: 100%;
     height: auto;
   }
+
   .sec-4-content-2 img {
     width: 100%;
     height: auto;
   }
+
   .sec-4-content-3 img {
     width: 100%;
     height: auto;
     /* position: relative;
     top: 102px; */
   }
+
   .sec-4-content-6 img {
     width: 100%;
     height: auto;
   }
+
   .sec-4-content-5 img {
     width: 50%;
     height: auto;
   }
+
   /* .center {
     width: 100%;
   } */
@@ -656,8 +694,186 @@
 
 /* section 4 grid block css ends  */
 /* ************************************************************************ */
-.section5 {
-  height: 400px;
-  width: 100%;
-  background-color: black;
+
+/* ************************************************************************ */
+.slider-container {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  /* margin-top: 2.6rem; */
+  overflow: hidden;
+  /* margin: 2.6rem 1rem 1rem 1rem; */
+  margin: 1% 0% 2% 2.5%;
 }
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+  /* Take up full width of the viewport */
+  /* max-width: 100%; */
+  /* Ensure it doesn't exceed the width of the viewport */
+  height: 700px;
+  /* Set height to 668px */
+
+  position: relative;
+}
+
+.slide {
+  /* flex: 0 0 100%; */
+  /* width: 100%; */
+  width: 100%;
+  /* Make each slide take up full width */
+  height: 100%;
+  /* Make each slide take up full height of the slider */
+  position: absolute;
+  /* Position slides absolutely within the slider */
+  top: 0;
+  /* Position at the top of the slider */
+  left: 0;
+}
+
+.slide img {
+  width: 100%;
+  /* Make sure images fill their container */
+  height: 100%;
+  /* Make sure images fill their container */
+  object-fit: cover;
+  /* Ensure the images cover the entire slide area */
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 40%;
+  display: inline;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+#playPauseButton {
+  /* color: black; */
+  font-size: 30px;
+  /* border-radius: 50%; */
+  height: 45px;
+  width: 45px;
+  margin-left: 45%;
+  border: 0px solid;
+  background-color: white;
+  text-align: end;
+  cursor: pointer;
+}
+
+/* ************************************************************************ */
+
+/* ************************************************************************ */
+/* footer section css starts  */
+.footer {
+  padding: 0px 22px;
+  background-color: rgb(245, 245, 247);
+  margin-top: 2rem;
+}
+
+.container {
+  font-size: 12px;
+  margin: 0% 15%;
+  padding-top: 1rem;
+}
+
+/* @media (max-width: 1592px) {
+    .footer {
+        margin: 0% 15%;
+    } 
+}*/
+
+@media (max-width: 1396px) {
+  .container {
+    margin: 0% 14%;
+  }
+}
+
+@media (max-width: 1202px) {
+  .container {
+    margin: 0% 13%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    margin: 0% 12%;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    margin: 0% 11%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    margin: 0% 10%;
+  }
+}
+
+@media (max-width: 830px) {
+  .container {
+    margin: 0% 0%;
+  }
+
+  .container {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+.footer-flex {
+  display: flex;
+  flex-basis: 100px;
+  margin-top: 0.5rem;
+  /* flex-wrap: wrap; */
+}
+
+.footer-flex .foot {
+  width: 100%;
+  height: auto;
+}
+
+.para1 {
+  margin: 10px 0px 2px 2px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.56);
+  cursor: pointer;
+}
+
+.para1:hover {
+  text-decoration: underline;
+}
+
+.special1 {
+  margin: 20px 0px 20px 2px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 12px;
+}
+@media (max-width: 650px) {
+  .footer-flex {
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+/* footer section css ends  */
+/* ************************************************************************ */
